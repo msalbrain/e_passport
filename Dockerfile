@@ -13,7 +13,7 @@ WORKDIR /app
 # COPY requirements.txt .
 
 # Install the project dependencies
-RUN pip install cmake
+RUN pip install -U pip wheel cmake
 RUN pip install dlib
 RUN pip install opencv-python 
 RUN pip install face_recognition
